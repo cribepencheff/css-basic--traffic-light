@@ -1,0 +1,42 @@
+body {
+  background-color: #CCCCCC;
+}
+
+.trafficlight {
+  background-color: #FFFFFF;
+  width: 235px;
+  padding: 10px;
+  display: block;
+  margin: 80px auto;
+}
+
+.trafficlight-red,
+.trafficlight-yellow,
+.trafficlight-green {
+  width: 195px;
+  height: 195px;
+  border-width: 20px;
+  border-style: solid;
+  margin-bottom: 10px;
+}
+
+.trafficlight-red {
+  background-color: #Ff0000;
+  border-color: #780a00;
+}
+
+.trafficlight-yellow {
+  background-color: #ffe600;
+  border-color: rgb(156, 122, 0);
+}
+
+.trafficlight-green {
+  background-color: #0a8b00;
+  border-color: #076200;
+}
+
+.trafficlight {
+  > *:last-child {
+    margin-bottom: 0;
+  }
+}
