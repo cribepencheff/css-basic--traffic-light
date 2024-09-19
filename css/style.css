@@ -10,9 +10,16 @@ body {
   margin: 80px auto;
 }
 
+.trafficlight {
+  > *:last-child {
+    margin-bottom: 0;
+  }
+}
+
 .trafficlight-red,
 .trafficlight-yellow,
 .trafficlight-green {
+  position: relative;
   width: 195px;
   height: 195px;
   border-width: 20px;
@@ -26,7 +33,7 @@ body {
 }
 
 .trafficlight-yellow {
-  background-color: #ffe600;
+  background-color: #f7fb00;
   border-color: rgb(156, 122, 0);
 }
 
@@ -35,8 +42,29 @@ body {
   border-color: #076200;
 }
 
-.trafficlight {
-  > *:last-child {
-    margin-bottom: 0;
-  }
+.trafficlight-red-inner,
+.trafficlight-yellow-inner,
+.trafficlight-green-inner {
+  position: absolute;
+  background-color: hsla(0, 0%, 100%, 0.5);
+}
+
+.trafficlight-red-inner {
+  height: 50%;
+  width: 100%;
+  bottom: 0;
+}
+
+.trafficlight-yellow-inner {
+  height: 50%;
+  width: 50%;
+  bottom: 0;
+  right: 0;
+}
+
+.trafficlight-green-inner {
+  height: 50%;
+  width: 50%;
+  bottom: 0;
+  left: 0;
 }
